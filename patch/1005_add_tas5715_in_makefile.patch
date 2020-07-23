@@ -1,0 +1,18 @@
+--- ./sound/soc/codecs/Makefile.orig	2014-11-12 01:59:34.000000000 +0300
++++ ./sound/soc/codecs/Makefile	2015-04-02 10:18:38.997753032 +0300
+@@ -62,6 +62,7 @@
+ snd-soc-sta529-objs := sta529.o
+ snd-soc-stac9766-objs := stac9766.o
+ snd-soc-tas5086-objs := tas5086.o
++snd-soc-tas5715-objs := tas5715.o
+ snd-soc-tlv320aic23-objs := tlv320aic23.o
+ snd-soc-tlv320aic26-objs := tlv320aic26.o
+ snd-soc-tlv320aic31xx-objs := tlv320aic31xx.o
+@@ -193,6 +194,7 @@
+ obj-$(CONFIG_SND_SOC_STA529)   += snd-soc-sta529.o
+ obj-$(CONFIG_SND_SOC_STAC9766)	+= snd-soc-stac9766.o
+ obj-$(CONFIG_SND_SOC_TAS5086)	+= snd-soc-tas5086.o
++obj-$(CONFIG_SND_SOC_TAS5715)	+= snd-soc-tas5715.o
+ obj-$(CONFIG_SND_SOC_TLV320AIC23)	+= snd-soc-tlv320aic23.o
+ obj-$(CONFIG_SND_SOC_TLV320AIC26)	+= snd-soc-tlv320aic26.o
+ obj-$(CONFIG_SND_SOC_TLV320AIC31XX)     += snd-soc-tlv320aic31xx.o

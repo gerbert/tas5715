@@ -1,0 +1,21 @@
+--- ./sound/soc/codecs/Kconfig.orig	2015-03-11 23:48:00.000000000 +0300
++++ ./sound/soc/codecs/Kconfig	2015-04-10 13:57:34.948067250 +0300
+@@ -73,6 +73,7 @@
+ 	select SND_SOC_STA529 if I2C
+ 	select SND_SOC_STAC9766 if SND_SOC_AC97_BUS
+ 	select SND_SOC_TAS5086 if I2C
++	select SND_SOC_TAS5715 if I2C
+ 	select SND_SOC_TLV320AIC23 if I2C
+ 	select SND_SOC_TLV320AIC26 if SPI_MASTER
+ 	select SND_SOC_TLV320AIC31XX if I2C
+@@ -369,6 +370,10 @@
+ 	tristate "Texas Instruments TAS5086 speaker amplifier"
+ 	depends on I2C
+ 
++config SND_SOC_TAS5715
++	tristate "Texas Instruments TAS5715 speaker amplifier"
++	depends on I2C
++
+ config SND_SOC_TLV320AIC23
+ 	tristate
+ 
